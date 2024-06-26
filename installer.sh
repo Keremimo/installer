@@ -41,7 +41,7 @@ if [ -d ~/.config/nvim ]; then
   exit 1
 fi
 echo "INFO: Installing NormalNvim in '~/.config/nvim'"
-git clone https://github.com/NormalNvim/NormalNvim.git ~/.config/nvim
+git clone https://github.com/Keremimo/NormalNvim.git ~/.config/nvim
 cd ~/.config/nvim || echo 2>&1
 echo "------------------------------------------------------------------"
 echo "SUCCESS: NormalNvim installed correctly"
