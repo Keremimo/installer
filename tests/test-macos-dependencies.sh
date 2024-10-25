@@ -19,7 +19,7 @@ dependencies=(
     "ranger"
     "fd"
     "git-delta"
-    "rustup-init"
+    "rustup"
     "yarn"
 )
 check_homebrew_dependencies "${dependencies[@]}" || exit 1
@@ -27,7 +27,6 @@ check_homebrew_dependencies "${dependencies[@]}" || exit 1
 # python
 printf '\n%s\n' "- Python packages -"
 dependencies=(
-    "pynvim"
     "pytest"
 )
 check_python_dependencies "${dependencies[@]}" || exit 1
@@ -44,6 +43,7 @@ printf '\n%s\n' "- Cargo packages -"
 dependencies=(
     "cargo-nextest"
     "grcov"
+    "yazi-fm"
 )
 check_cargo_dependencies "${dependencies[@]}" || exit 1
 printf '\n\n\n\n'
